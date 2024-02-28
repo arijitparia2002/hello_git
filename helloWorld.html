@@ -1,11 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello Woorld</title>
+    <title>Arijit Paria</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <div class="container">
+        <img onclick="changeImg()" id="img" src="360_F_141001206_IFYi3t5jMRLa4cg3gQ4ei0XKxZDs8kWG.jpg" alt="Envelope">
+        <p class="para">This is Arijit Paria</p>
+        <p class="click">Click ☝️</p>
+    </div>
+
+    <script>
+        const img = document.querySelector("#img");
+
+        img.addEventListener("click", changeImg);
+        function changeImg() {
+            img.src = "unnamed.png";
+            var para = document.querySelector(".para");
+            para.classList.remove("para");
+            var click = document.querySelector(".click");
+            click.classList.add("hidden");
+        }
+
+    </script>
+
 </body>
+
 </html>
